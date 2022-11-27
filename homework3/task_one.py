@@ -1,2 +1,2 @@
-stroka = input("Введите строку")
+stroka = input("Введите строку: ")
 print(stroka.replace('#', '/'))
