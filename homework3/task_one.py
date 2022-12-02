@@ -1,2 +1,2 @@
-stroka = input("Введите строку: ")
-print(stroka.replace('#', '/'))
+string = input("Введите строку: ")
+print(string.replace('#', '/'))
