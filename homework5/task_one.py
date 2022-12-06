@@ -41,15 +41,19 @@ while True:
         result["operator"] = "A1"
         print(result)
     if phone_number[4:6] == "29":
-        if phone_number[7:8] in ["1", "3", "6", "9"]:
+        if phone_number[6] in ["1", "3", "6", "9"]:
             result["success"] = True
             result["phone"] = phone_number
             result["operator"] = "A1"
             print(result)
-        elif phone_number[7:8] in ["2", "5", "7", "8"]:
+        elif phone_number[6] in ["2", "5", "7", "8"]:
             result["success"] = True
             result["phone"] = phone_number
             result["operator"] = "MTC"
+            print(result)
+        else:
+            result["success"] = False
+            result["description"] = "Operator is not defined"
             print(result)
     exit_choice = input("Хотите проверить ещё один номер Y/N: ")
     if exit_choice == "N":
