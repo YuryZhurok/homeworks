@@ -1,8 +1,5 @@
 def is_right_angle_triangle(a, b, c):
-    sides = sorted([13, 4, 9])
-    a = sides[0]
-    b = sides[1]
-    c = sides[2]
+    a, b, c = sorted([a, b, c])
     while True:
         result = {}
         if a+b <= c or a+c <= b or b+c <= a:
@@ -19,4 +16,4 @@ def is_right_angle_triangle(a, b, c):
             return (result)
 
 
-print(is_right_angle_triangle(13, 4, 9))
+print(is_right_angle_triangle(5, 3, 4))
