@@ -1,0 +1,5 @@
+cat /tmp/chat | grep 'PM\|AM' | cut -d ' ' -f1,2 | sort | uniq
+cat /tmp/chat | grep 'PM\|AM' | cut -d ' ' -f1,2 | sort | uniq | wc | cut -d ' ' -f6
+cat /tmp/chat | grep '?'
+
+Регулярка: grep -E ‘(GNU|GPL|Linux)’ gpl-3.0.txt
